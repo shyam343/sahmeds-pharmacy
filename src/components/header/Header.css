@@ -1,0 +1,113 @@
+.header {
+  background-color: #ffffff; /* White background for the header */
+  padding: 10px 20px; /* Spacing around header */
+  border-bottom: 2px solid #e0e0e0; /* Slightly thicker bottom border */
+}
+
+.header-top {
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.location, .contacts {
+  font-size: 16px;
+  color: #94acc4; /* Darker text for contrast */
+
+}
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.logo {
+  width: 150px; /* Adjust based on your logo size */
+}
+
+.search-container {
+  flex-grow: 2; /* Allow search container to take more space */
+  margin: 0 20px; /* Space around the search input */
+  display: flex;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.btn-search, .btn-prescription, .btn-signup, .btn-login {
+  background-color: #dc3545; /* Primary color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.btn-prescription {
+  background-color: #28a745; /* Success color */
+}
+
+.btn-signup, .btn-login {
+  background-color: #007bff; /* Primary color */
+}
+
+.cart-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 10px; /* Add space to the left */
+}
+
+.cart-icon img {
+  width: 30px; /* Size of cart icon */
+  margin-right: 5px;
+}
+
+.cart-count {
+  background-color: #dc3545; /* Danger color */
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 15px; /* Slightly reduced padding on smaller screens */
+  }
+
+  .header-top {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align to the left */
+  }
+
+  .header-bottom {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align to the left */
+    width: 100%; /* Full width */
+  }
+
+  .logo {
+    margin-bottom: 10px; /* Space below the logo */
+  }
+
+  .search-container {
+    margin: 10px 0; /* Margin around search on smaller screens */
+  }
+
+  .btn-prescription, .btn-signup, .btn-login {
+    width: 100%; /* Full width buttons on small screens */
+    margin: 5px 0; /* Vertical margin */
+  }
+}

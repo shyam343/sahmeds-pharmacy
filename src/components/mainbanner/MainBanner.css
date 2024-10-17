@@ -1,0 +1,186 @@
+/* Main container for the banner */
+.main-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  background-color: #16a085; /* Set background color */
+}
+
+/* Doctor group layout */
+.doctor-group {
+  display: flex;
+  gap: 50px; /* Reduce gap for better mobile view */
+  flex-wrap: nowrap;
+  overflow: hidden; /* Hide overflow for small screens */
+}
+
+/* Doctor profile styling */
+.doctor-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px; /* Ensure doctor profiles don't get too wide */
+  text-align: center;
+}
+
+/* Doctor profile image */
+.doctor-profile img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Arrow button styling */
+.arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #fff; /* Arrow color */
+}
+
+/* Left and right arrow positioning */
+.left-arrow {
+  left: 20px; /* Adjust for smaller screens */
+}
+
+.right-arrow {
+  right: 20px; /* Adjust for smaller screens */
+}
+
+/* General text styling for doctor profiles */
+.doctor-profile h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.doctor-profile p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For large desktops (default styling) */
+@media (min-width: 1024px) {
+  .doctor-group {
+    gap: 150px;
+  }
+
+  .arrow {
+    font-size: 3rem;
+  }
+
+  .left-arrow {
+    left: 80px;
+  }
+
+  .right-arrow {
+    right: 80px;
+  }
+}
+
+/* For tablets and smaller laptops */
+@media (max-width: 1024px) {
+  .doctor-group {
+    gap: 100px; /* Reduce gap between profiles */
+  }
+
+  .arrow {
+    font-size: 2.5rem;
+  }
+
+  .left-arrow {
+    left: 40px;
+  }
+
+  .right-arrow {
+    right: 40px;
+  }
+
+  .doctor-profile img {
+    width: 130px; /* Slightly smaller image */
+  }
+
+  .doctor-profile h3 {
+    font-size: 1.1rem;
+  }
+
+  .doctor-profile p {
+    font-size: 0.9rem;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+  .doctor-group {
+    flex-direction: column; /* Stack profiles vertically */
+    gap: 20px;
+  }
+
+  .arrow {
+    font-size: 2rem;
+  }
+
+  .left-arrow {
+    left: 20px;
+  }
+
+  .right-arrow {
+    right: 20px;
+  }
+
+  .doctor-profile img {
+    width: 100px; /* Smaller image size for mobile */
+  }
+
+  .doctor-profile h3 {
+    font-size: 1rem;
+  }
+
+  .doctor-profile p {
+    font-size: 0.8rem;
+  }
+}
+
+/* For very small mobile devices */
+@media (max-width: 480px) {
+  .doctor-group {
+    gap: 10px; /* Smaller gap between profiles */
+  }
+
+  .arrow {
+    font-size: 1.5rem;
+  }
+
+  .left-arrow {
+    left: 10px;
+  }
+
+  .right-arrow {
+    right: 10px;
+  }
+
+  .doctor-profile img {
+    width: 80px;
+  }
+
+  .doctor-profile h3 {
+    font-size: 0.9rem;
+  }
+
+  .doctor-profile p {
+    font-size: 0.7rem;
+  }
+}

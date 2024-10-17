@@ -1,0 +1,98 @@
+.product-carousel {
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card {
+  min-width: 20%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-card.active {
+  opacity: 1;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  font-size: 0.8rem;
+}
+
+.product-image {
+  width: 100px;
+  height: auto;
+}
+
+.product-name {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.product-price {
+  color: red;
+  font-size: 1.2rem;
+}
+
+.product-original-price {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.add-to-cart-btn {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-arrow, .next-arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev-arrow {
+  left: 10px;
+}
+
+.next-arrow {
+  right: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .product-card {
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-card {
+    min-width: 100%;
+  }
+}

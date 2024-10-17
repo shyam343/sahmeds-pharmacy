@@ -1,0 +1,116 @@
+/* CartModal.css */
+
+.cart-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it is above other content */
+}
+
+.cart-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px; /* Set a width for the modal */
+    max-width: 90%; /* Responsive max width */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: relative; /* For positioning the close button */
+}
+
+.close-cart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333; /* Color for the close button */
+}
+
+h3 {
+    margin: 0 0 15px;
+    text-align: center; /* Center the heading */
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px; /* Add padding around cart items */
+    border: 1px solid #e0e0e0; /* Add border for better separation */
+    border-radius: 4px; /* Rounded corners for items */
+    background-color: #f9f9f9; /* Light background for items */
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-control button {
+    margin: 0 5px;
+    background-color: #007bff; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.quantity-control button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.quantity-control span {
+    width: 30px;
+    text-align: center;
+}
+
+.cart-item p {
+    margin: 0;
+}
+
+.cart-total {
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: right; /* Right align total */
+}
+
+button.remove-item {
+    background-color: #ff4d4d; /* Remove button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button.remove-item:hover {
+    background-color: #e63939; /* Darker shade on hover */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 480px) {
+    .cart-content {
+        width: 90%; /* Full width on small screens */
+    }
+
+    .close-cart {
+        font-size: 18px; /* Smaller close button on mobile */
+    }
+
+    .cart-item {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align left */
+    }
+}

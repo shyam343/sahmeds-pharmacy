@@ -1,0 +1,40 @@
+/* src/components/Companies.css */
+.companies-container {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .companies-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .company-card {
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(15% - 20px); /* Adjusts to four cards in a row */
+  }
+  
+  .company-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .view-more {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .view-more:hover {
+    text-decoration: underline;
+  }
+  

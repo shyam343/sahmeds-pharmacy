@@ -1,0 +1,70 @@
+.lab-tests-section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .lab-tests-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 250px;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+  
+  .card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .pricing {
+    margin: 10px 0;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: grey;
+    font-size: 14px;
+  }
+  
+  .discounted-price {
+    font-size: 18px;
+    color: #000;
+  }
+  
+  .test-img {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .view-all-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #008080;
+    font-weight: bold;
+  }
+  
