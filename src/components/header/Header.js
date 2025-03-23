@@ -14,7 +14,7 @@ function Header() {
           <i className="fas fa-map-marker-alt"></i> Ranighat, Birgunj, Nepal
         </div>
         <div className="contacts">
-          <span>📞 9826240640 / 9811247030</span>
+          <span>📞 9826000000 / 9811000000</span>
           <span>✉️ info@sahmeds.com</span>
         </div>
       </div>

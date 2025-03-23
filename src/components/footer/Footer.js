@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
   return (
     <footer className="footer">
-      <div>Contact Us: 9826240640 / 9811247030</div>
+      <div>Contact Us: 9826000000 / 9811200000</div>
       <div>Follow us on: facebook
         <i className="fab fa-facebook"></i>
         <i className="fab fa-whatsapp"></i>

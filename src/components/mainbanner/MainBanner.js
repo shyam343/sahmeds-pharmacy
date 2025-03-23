@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from "react";
 import './MainBanner.css';
-import anil from './doctor-anil.jpg';  // Correct import path
-import sah from './sah.jpg';  // Correct import path
+import anil from './vdb.png';  // Correct import path
+import sah from './vdb.png';  // Correct import path
 
 const doctors = [
   [
     {
       imgSrc: anil,  // Use the imported image
-      name: "Dr. Raj Kumar Yadav",
-      nmc: "Nmc no.13420",
-      specialization: "Physician MD",
+      name: "Dr. XXXXX",
+      nmc: "Nmc no.XXXXX",
+      specialization: "XXXXX",
       schedule: "Sunday to Friday 6pm Onwards",
       checkup: "Home Check up"
     },
     {
       imgSrc: sah,  // Use the imported image
-      name: "Dr. Shyam Sah",
-      nmc: "Nmc no.20589",
-      specialization: "MD OBS / Gyane",
+      name: "Dr. XXXXX",
+      nmc: "Nmc no.XXXXX",
+      specialization: "XXXXX",
       schedule: "Sunday & Thursday 3pm, Saturday 10am",
       checkup: "Home Check Up"
     }
@@ -25,16 +25,16 @@ const doctors = [
   [
     {
         imgSrc: sah,  // Use the imported image
-        name: "Dr. Shyam Sah",
-        nmc: "Nmc no.20589",
-        specialization: "MD OBS / Gyane",
+        name: "Dr. XXXXX",
+        nmc: "Nmc no.XXXXX",
+        specialization: "XXXXX",
         schedule: "Sunday & Thursday 3pm, Saturday 10am",
         checkup: "Home Check Up"
       },
     {
       imgSrc: anil,  // Another use of the imported image
-      name: "Dr. Anil Kumar Yadav",
-      nmc: "Nmc no.13420",
+      name: "Dr. XXXXX",
+      nmc: "Nmc no.XXXXX",
       specialization: "Physician MD",
       schedule: "Sunday to Friday 6pm Onwards",
       checkup: "Home Check up"
